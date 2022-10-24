@@ -1,0 +1,136 @@
+
+/* tablet */
+@media screen and (min-width: 740px) and (max-width: 1023px) {
+    #navbar{
+        justify-content: space-between;
+    }
+    #navbar .response-nav{
+        display: none;
+    }
+    #navbar .active-nav{
+        display: block;
+    }
+    #navbar .active-nav .button-item{
+        width:100%;
+        background-color: var(--main-backgroundColor);
+    }
+    #navbar .active-nav a{
+        color: var(--main-textColor);
+    }
+    #introduction{
+        width: 100%;
+    }
+    .tours{
+        width:100%;
+    }
+    .tours .card-tour{
+        width: 230px;
+    }
+    .tours .card-tour img{
+        width: 230px;
+    }
+    #selling-tour ul{
+        width:100%;
+    }
+    .footer img{
+        height: 400px;
+    }
+    .tours .buying-tickets{
+        left:5%;
+    }
+    .tours .buying-tickets .form-buying{
+        width:90%;
+    }
+    .tours .buying-tickets .header{
+        width:90%;
+    }
+
+}
+/* mobile */
+@media screen and (max-width: 739px) {
+    #navbar{
+        justify-content: space-between;
+    }
+    #navbar .response-nav{
+        display: none;
+    }
+    #navbar .active-nav{
+        display: block;
+    }
+    #navbar .active-nav .button-item{
+        width:100%;
+        background-color: var(--main-backgroundColor);
+    }
+    #navbar .active-nav a{
+        color: var(--main-textColor);
+    }
+    #header .slider .slider-text{
+        display: none;
+    }
+    #introduction{
+        width: 100%;
+    }
+    #introduction .intro-members{
+        flex-direction: column;
+    }
+    #introduction .member{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    #introduction .intro-members img{
+        width:206px;
+        height:206px;
+    }
+    .tours{
+        flex-direction: column;
+        height: auto;
+        width:100%;
+        align-items: center;
+    }
+    .tours .card-tour{
+        margin-bottom: 10px;
+        width: 100%;
+        height: auto;
+    }
+    #selling-tour ul{
+        width:100%;
+    }
+    .tours .card-tour img{
+        width: 100%;
+        height: 250px;
+    }
+    .tours .buying-tickets{
+        left:2%;
+    }
+    .tours .buying-tickets .form-buying{
+        width:96%;
+    }
+    .tours .buying-tickets .header{
+        width:96%;
+    }
+    #contact{
+        width:100%;
+    }
+    #contact .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .information-container{
+        width: 100%;
+        margin-bottom:10px;
+    }
+    #contact .contact-container .input-container{
+        width:100%;
+        flex-direction: column;
+    }
+    .contact-container .input-container .name-contact{
+        width: 95%;
+    }
+    .contact-container .input-container .email-contact{
+        width: 95%;
+    }.footer img{
+        height: 200px;
+    }
+}
+    

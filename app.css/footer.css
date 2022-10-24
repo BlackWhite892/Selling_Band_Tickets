@@ -1,0 +1,29 @@
+.footer{
+    margin-top:30px;
+    filter: contrast(80%) brightness(80%) grayscale(50%);
+}
+.footer img{
+    width:100%;
+    height: 500px;
+}
+.footer .cite-container{
+    text-align: center;
+    opacity: 0.6;
+    padding: 60px 10px;
+}
+.footer .cite-container .icon-container{
+    margin-bottom: 30px;
+}
+.footer .cite-container .icon-container i{
+    font-size: 26px;
+    padding: 2px;
+}
+.footer .cite-container .icon-container i:hover{
+    opacity: 0.4;
+}
+.footer .cite-container p{
+font-family: var(--main-fontFamily);
+}
+.footer .cite-container a{
+    color:var(--main-backgroundColor);
+}

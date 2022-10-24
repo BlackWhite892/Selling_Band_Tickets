@@ -1,0 +1,29 @@
+@import url("header.css");
+@import url("navbar.css");
+@import url("introduction.css");
+@import url("selling_tour.css");
+@import url("contact.css");
+@import url("footer.css");
+@import url("responsive.css");
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size:16px;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --main-backgroundColor: black;
+    --hover-backgroundColor: rgb(184, 183, 183);
+    --hover-textColor: black;
+    --main-textColor: white;
+    --main-fontFamily: 'Lato', sans-serif;
+    --body-fontFamily: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --form-backgroundColor: rgb(87, 87, 255);
+    --buying-width: 770px;
+    --calc-width:510px;
+}

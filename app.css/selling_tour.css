@@ -1,0 +1,213 @@
+#selling-tour{
+    background-color: var(--main-backgroundColor);
+    color:var(--main-textColor);
+    display: flex;
+    flex-direction: column;
+    font-family: var(--body-fontFamily);
+    z-index: -1;
+    width:100%;
+    padding: 50px 20px;
+}
+#selling-tour h2{
+    text-align: center;
+    font-weight: normal;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+#selling-tour .slogan{
+    font-size: 1rem;
+    opacity: 0.6;
+    margin-bottom: 20px;
+}
+#selling-tour ul{
+    background-color: var(--main-textColor);
+    color:var(--main-backgroundColor);
+    width: 60%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    padding-left:0;
+}
+#selling-tour li{
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 5px 20px;
+    opacity: 0.8;
+    border-bottom:1px solid var(--hover-backgroundColor);
+}
+#selling-tour span{
+    margin-left: 5%;
+    background-color: red;
+    color:var(--main-textColor);
+    padding:2px 10px;
+}
+#selling-tour span#slot{
+    margin-right: 5%;
+    background-color: var(--main-backgroundColor);
+    color:var(--main-textColor);
+    float: right;
+    border: 0px solid transparent;
+    border-radius: 50%;;
+}
+.tours{
+    display: flex;
+    justify-content: space-between;
+    width:60%;
+    height: 480px;
+    margin: auto;
+    padding: 30px 0;    
+}
+.tours .card-tour{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-textColor);
+    color: var(--main-backgroundColor);
+    font-size: 1rem;
+    font-family: var(--body-fontFamily);
+    width:240px;
+    height: auto;
+}
+.tours .card-tour img{
+    width: 240px;
+    height: 180px;
+    object-fit: cover;
+}
+.tours .card-tour .tour-information{
+    padding: 0px 12px;
+}
+.tours .card-tour h2{
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: left;
+}
+.tours .card-tour p#day{
+    font-size: 1rem;
+    opacity: 0.5;
+}
+.tours .card-tour button{
+    padding: 8px 16px;
+    background-color: var(--main-backgroundColor);
+    color:var(--main-textColor);
+    font-size: 1rem;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+.tours .buying-tickets{
+    position: fixed;
+    top:-200%;
+    left:15%;
+    width: 100%;
+    padding: 100px 0 0 0;
+    opacity: 0;
+    z-index: 1;
+    /* display: none; */
+    /* animation: moving 0.8s ease-out forwards; */
+}
+@keyframes moving {
+    from{top:-200%;opacity:0;}
+    to{top:0;opacity:1;}
+}
+@keyframes revereMoving {
+    from{top:0;opacity:1;}
+    to{top:-100%;opacity: 0;}
+}
+.tours .buying-tickets .form-buying{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-textColor);
+    width: 70%;
+    padding: 0px 20px;
+    overflow-y: auto;
+}
+.tours .buying-tickets .header{
+    background-color: var(--form-backgroundColor);
+    width: 70%;
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 30px;
+    font-family: var(--body-fontFamily);
+    position: relative;
+}
+.tours .buying-tickets .header #close{
+    position: absolute;
+    right:0;
+    top:0;
+    padding:20px 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color:var(--main-textColor);
+    font-size: 20px;
+}
+.tours .buying-tickets .header #close:hover{
+    background-color:var(--hover-backgroundColor);
+    color:var(--main-backgroundColor);
+}
+.tours .buying-tickets .header i{
+    padding: 0 10px;
+}
+.tours .buying-tickets .form-buying label{
+    color: var(--main-backgroundColor);
+    padding: 10px 0px;
+    font-family: var(--body-fontFamily);
+}
+.tours .buying-tickets .form-buying input{
+    width: 95%;
+    margin: 5px 0px;
+    padding: 10px 0px;
+}
+.tours .buying-tickets .form-buying input:placeholder-shown{
+    padding-left: 10px;
+    font-size: 1rem;
+    font-family: var(--body-fontFamily);
+}
+.tours .buying-tickets .form-buying #pay-button:hover{
+    background-color:var(--hover-backgroundColor);
+    color:var(--main-backgroundColor);
+}
+.tours .buying-tickets .form-buying #close-button:hover{
+    background-color:var(--hover-backgroundColor);
+    color:var(--main-backgroundColor);
+}
+.tours .buying-tickets .form-buying #pay-button{
+    width: 95%;
+    margin: 15px 0px;
+    padding: 20px 0px;
+    background-color: var(--form-backgroundColor);
+    border: none;
+    color: var(--main-textColor);
+    font-size: 1rem;
+    font-family: var(--body-fontFamily);
+    cursor: pointer;
+}
+.tours .buying-tickets .form-buying #pay-button i{
+    padding-left: 10px;
+}
+.tours .buying-tickets .form-buying .close-container{
+    margin: 10px 0px;
+}
+.tours .buying-tickets .form-buying #close-button{
+    float: left;
+    padding: 8px 15px;
+    font-size: 1rem;
+    background-color: rgb(245, 36, 36);
+    color:var(--main-textColor);
+    border:none;
+    font-family: var(--body-fontFamily);
+    cursor: pointer;
+}
+.tours .buying-tickets .form-buying #close-button i{
+    padding-left: 10px;
+}
+.tours .buying-tickets .form-buying p{
+    color:var(--main-backgroundColor);
+    float: right;
+    font-family: var(--body-fontFamily);
+    font-weight: bolder;
+    margin:0;
+}
+.tours .buying-tickets .form-buying a{
+    text-decoration: none;
+    color: var(--form-backgroundColor);
+}
