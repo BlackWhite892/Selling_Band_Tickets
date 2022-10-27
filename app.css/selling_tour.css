@@ -50,6 +50,11 @@
     border: 0px solid transparent;
     border-radius: 50%;;
 }
+#selling-tour span#slot::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .tours{
     display: flex;
     justify-content: space-between;
@@ -197,6 +202,11 @@
     font-family: var(--body-fontFamily);
     cursor: pointer;
 }
+.tours .buying-tickets .form-buying #close-button::after{
+    content: "";
+    display: table;
+    clear: both;
+}
 .tours .buying-tickets .form-buying #close-button i{
     padding-left: 10px;
 }
@@ -206,6 +216,11 @@
     font-family: var(--body-fontFamily);
     font-weight: bolder;
     margin:0;
+}
+.tours .buying-tickets .form-buying p::after{
+    content: "";
+    display: table;
+    clear: both;
 }
 .tours .buying-tickets .form-buying a{
     text-decoration: none;

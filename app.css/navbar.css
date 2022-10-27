@@ -33,6 +33,11 @@
 #navbar .active-nav button{
     float:right;
 }
+#navbar .active-nav button::after{
+    content: "";
+    display:table;
+    clear: both;
+}
 #navbar button i{
     padding-left: 5px;
 }
